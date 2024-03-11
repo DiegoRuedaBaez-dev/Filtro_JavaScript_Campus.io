@@ -1,0 +1,12 @@
+{
+  "name": "universidad_Proyecto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "json-server --watch db/database.json --port 3002"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
