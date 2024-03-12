@@ -144,7 +144,7 @@ main {
 
 .main-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2fr, 1fr);
     gap: 1rem;
 }
 
@@ -314,7 +314,7 @@ main {
         top: 1rem;
         right: 1rem;
     }
-
+}
 @media screen and (max-width: 400px) {
     .main-container {
         grid-template-columns: 1fr;
