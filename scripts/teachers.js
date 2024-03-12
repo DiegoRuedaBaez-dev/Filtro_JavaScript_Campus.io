@@ -10,7 +10,7 @@ async function showTeachers(){
     initialState();// every innerHTML become empty
     const teachersHTML = document.getElementById("teachers");
     teachersHTML.innerHTML = "";// assure that is empty
-    teachersHTML.innerHTML += "<div class='h2 text-center'>teachers</div>"
+    teachersHTML.innerHTML += "<div class='h2 text-center'>Profesores</div>"
     const teachers = await load("teachers");
     for(teacher of teachers){
         if((teacher["id"]-1)%2 === 0){//the rows that we create only have 2 spaces
@@ -29,7 +29,7 @@ async function showTeachers(){
 async function newTeacherForm(){
     initialState();
     const teachersHTML = document.getElementById("teachers");
-    teachersHTML.innerHTML = `<div class='h2 text-center'>New Teacher</div>`;
+    teachersHTML.innerHTML = `<div class='h2 text-center'>Nuevo Profesor</div>`;
     const teachers = await load("teachers");
     teachersHTML.innerHTML += await createPersonForm(teachers[0], "Teachers");
 }
