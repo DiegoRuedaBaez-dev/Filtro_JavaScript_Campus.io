@@ -19,7 +19,16 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-h2, h3, h4, h5, h6, p, a, input, textarea, ul {
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+input,
+textarea,
+ul {
     margin: 0;
     padding: 0;
 }
@@ -27,13 +36,14 @@ h2, h3, h4, h5, h6, p, a, input, textarea, ul {
 ul {
     list-style-type: none;
 }
+
 img {
     max-width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
     padding-right: 5%;
-  }
+}
 
 a {
     text-decoration: none;
@@ -65,7 +75,7 @@ aside {
     gap: .5rem;
 }
 
-.boton-menu {
+.un {
     background-color: transparent;
     border: 0;
     color: #302a25;
@@ -74,12 +84,13 @@ aside {
     align-items: center;
     gap: 1rem;
     font-weight: 600;
-    padding: 1rem;
-    font-size: 1.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
     width: 100%;
+    margin: 0;
 }
 
-.boton-menu.active {
+.un.active {
     background-color: #887766;
     color: var(--clr-main);
     border-top-left-radius: 1rem;
@@ -87,7 +98,7 @@ aside {
     position: relative;
 }
 
-.boton-menu.active::before {
+.un.active::before {
     content: '';
     position: absolute;
     width: 1rem;
@@ -99,7 +110,7 @@ aside {
     box-shadow: 0 1rem 0 #887766;
 }
 
-.boton-menu.active::after {
+.un.active::after {
     content: '';
     position: absolute;
     width: 1rem;
@@ -124,58 +135,18 @@ main {
     margin-left: 0;
     border-radius: 2rem;
     padding: 3rem;
-}   
+}
 
 .titulo-principal {
     color: var(--clr-main);
     margin-bottom: 2rem;
 }
 
-.contenedor-productos {
+.main-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
 }
-
-.producto-imagen {
-    max-width: 100%;
-    border-radius: 1rem;
-}
-
-.producto-detalles {
-    background-color: var(--color-yellow);
-    color: var(--clr-main);
-    padding: .5rem;
-    border-radius: 1rem;
-    margin-top: -2rem;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: .25rem;
-}
-
-.producto-titulo {
-    font-size: 1.3rem;
-    text-transform: uppercase
-}
-
-.producto-agregar {
-    border: 0;
-    background-color: var(--color-yelllow-hover);
-    color: var(--clr-main);
-    padding: .4rem;
-    text-transform: uppercase;
-    border-radius: 2rem;
-    cursor: pointer;
-    border: 2px solid var(--color-yelllow-hover );
-    transition: background-color .2s, color .2s;
-}
-
-.producto-agregar:hover {
-    background-color: var(--clr-main);
-    color: var(--clr-white);
-}
-
 
 .header-mobile {
     display: none;
@@ -189,9 +160,50 @@ main {
     display: none;
 }
 
-
-
-
+.card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+.card-body {
+    padding: 1rem;
+  }
+  
+.card-title {
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+.list-group {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+.list-group-item {
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #eee;
+    color: #333;
+    font-size: 1rem;
+    font-weight: normal;
+  }
+  
+.list-group-item:last-child {
+    border-bottom: none;
+  }
+  
+.list-group-item span {
+    font-weight: bold;
+  }
+  
+.bi-clock-fill {
+    color: #6c757d;
+    margin-right: 0.5rem;
+  }
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 850px) {
@@ -213,7 +225,7 @@ main {
         max-width: 70%;
         height: auto;
         display: block;
-        margin: 0 ;
+        margin: 0;
     }
 
     .wrapper {
@@ -221,12 +233,14 @@ main {
         display: flex;
         flex-direction: column;
     }
-    aside img{
+
+    aside img {
         max-width: 90%;
         height: auto;
         display: block;
         margin: 0;
     }
+
     aside {
         position: fixed;
         z-index: 9;
@@ -245,8 +259,8 @@ main {
         visibility: visible;
     }
 
-    .boton-menu.active::before,
-    .boton-menu.active::after {
+    .un.active::before,
+    .un.active::after {
         display: none;
     }
 
@@ -271,7 +285,8 @@ main {
         padding-left: -10%;
     }
 
-    .open-menu, .close-menu {
+    .open-menu,
+    .close-menu {
         background-color: transparent;
         color: #887766;
         border: 0;

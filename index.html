@@ -11,11 +11,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
-<body>
+<body onload="initialState()">
 
     <div class="wrapper">
         <header class="header-mobile">
-          <img src="/resources/logo.png" alt="Logo UDS" />
+            <a onclick="initialState()" href="#">
+          <img src="/resources/logo.png" alt="Logo UDS"/>
+            </a>
             <button class="open-menu" id="open-menu">
                 <i class="bi bi-list"></i>
             </button>
@@ -25,45 +27,82 @@
                 <i class="bi bi-x"></i>
             </button>
             <header>
-              <img src="/resources/logo.png" alt="Logo UDS" />
+            <a onclick="initialState()" href="#">
+              <img src="/resources/logo.png" alt="Logo UDS"/>
+            </a>
             </header>
             <nav>
                 <ul class="menu">
-                    <li>
-                      <button id="Estudiantes" class="boton-menu boton-categoria"> <i class="bi bi-backpack"></i>Estudiantes</button>
-                    </li>
-                    
-                    <li>
-                        <button id="Profesores" class="boton-menu boton-categoria"><i class="bi bi-person-arms-up"></i>Profesores</button>
-                    </li>
-
-                    <li>
-                        <button id="Cursos" class="boton-menu boton-categoria"><i class="bi bi-journals"></i>Cursos</button>
-                    </li>
-
-                    <li>
-                      <button id="Matriculas" class="boton-menu boton-categoria"><i class="bi bi-receipt-cutoff"></i> Matriculas</button>
-                    </li>
-                    
-                    <li>
-                      <button id="Periodos" class="boton-menu boton-categoria"><i class="bi bi-bar-chart-steps"></i> Periodos</button>
-                    </li>
-
-                    <li>
-                      <button id="Programas" class="boton-menu boton-categoria"><i class="bi bi-diagram-3-fill"></i> Programas</button>
-                    </li>
-                    
-                    <li>
-                      <button id="Tarifas" class="boton-menu boton-categoria"><i class="bi bi-coin"></i> Tarifas</button>
-                    </li>
-
-                    <li>
-                      <button id="Escuelas" class="boton-menu boton-categoria"><i class="bi bi-buildings"></i> Escuelas</button>
-                    </li>
-
-                    <li>
-                      <button id="Ventas" class="boton-menu boton-categoria"><i class="bi bi-stripe"></i> Reportes</button>
-                    </li>
+                <li>
+                    <button onclick="showPrograms()", onclick="initialState() id="nav-programs" class="un" data-bs-dismiss="offcanvas"><i class="bi bi-bank2"></i>Programas</button>
+                </li>
+                <li>
+                    <button onclick="showPeriods()", onclick="initialState() id="nav-periods" class="un" data-bs-dismiss="offcanvas"><i class="bi bi-bar-chart-steps"></i>Periodos</button>
+                </li>
+                <li>
+                    <button onclick="showFees()", onclick="initialState() id="nav-fees" class="un" data-bs-dismiss="offcanvas"><i class="bi bi-bar-chart-line-fill"></i></i>Tarifas</button>
+                </li>
+                <li>
+                    <button onclick="showDepartments()", onclick="initialState() id="nav-departments" class="un" data-bs-dismiss="offcanvas"><i class="bi bi-buildings-fill"></i>Escuelas</button>
+                </li>
+                <li>
+                    <button onclick="teacherOptions()", onclick="initialState() id="nav-teachers" class="un p-0" data-bs-toggle="offcanvasTeachers"
+                        data-bs-target="#offcanvasTeachers" aria-controls="offcanvasTeachers"
+                        aria-label="Toggle teacher data"><i class="bi bi-person-arms-up"></i>Profesores</button>
+                </li>
+                <li>
+                    <button onclick="studentOptions()", onclick="initialState() id="nav-students" class="un p-0" data-bs-toggle="offcanvasStudents"
+                        data-bs-target="#offcanvasStudents" aria-controls="offcanvasStudents"
+                        aria-label="Toggle Student data"><i class="bi bi-backpack"></i>Estudiantes</button>
+                </li>
+                <li>
+                    <button onclick="showCourses()", onclick="initialState() id="nav-courses" class="un" data-bs-dismiss="offcanvas"><i class="bi bi-journals"></i>Cursos</button>
+                </li>
+                <li>
+                    <button onclick="showClassrooms()", onclick="initialState() id="nav-classrooms" class="un" data-bs-dismiss="offcanvas"><i class="bi bi-building-check"></i>Salones</button>
+                </li>
+                <li>
+                    <button onclick="subjectOptions()", onclick="initialState() id="nav-subjects" class="un p-0" data-bs-toggle="offcanvasSubjects"
+                        data-bs-target="#offcanvasSubjects" aria-controls="offcanvasSubjects"
+                        aria-label="Toggle Subject data"><i class="bi bi-book-half"></i>Asignaturas</button>
+                </li>
+                <li>
+                    <button onclick="tuitionOptions()", onclick="initialState() id="nav-tuitions" class="un p-0" data-bs-toggle="offcanvasTuitions"
+                        data-bs-target="#offcanvasTuitions" aria-controls="offcanvasTuitions"
+                        aria-label="Toggle Tuition data"><i class="bi bi-receipt-cutoff"></i>Matriculas</button>
+                </li>
+            </ul>
+            <ul id="teacher-menu" class="navbar-nav justify-content-around ms-5">
+                <li>
+                    <button onclick="newTeacherForm()", onclick="initialState() id="new-teachers" class="un" data-bs-dismiss="offcanvas"><i class="bi bi-person-badge-fill"></i>Nuevo Profesor</button>
+                </li>
+                <li>
+                    <button onclick="showTeachers()", onclick="initialState() id="show-teachers" class="un" data-bs-dismiss="offcanvas"><i class="bi bi-person-badge-fill"></i>Mostrar Profesores</button>
+                </li>
+            </ul>
+            <ul id="student-menu" class="navbar-nav justify-content-around ms-5">
+                <li>
+                    <button onclick="newStudentForm()", onclick="initialState() id="new-students" class="un" data-bs-dismiss="offcanvas"><i class="bi bi-person-add"></i>Estudiante Nuevo</button>
+                </li>
+                <li>
+                    <button onclick="showStudents()", onclick="initialState() id="show-students" class="un" data-bs-dismiss="offcanvas"><i class="bi bi-people-fill"></i>Mostrar Estudiantes</button>
+                </li>
+            </ul>
+            <ul id="subject-menu" class="navbar-nav justify-content-around ms-5">
+                <li>
+                    <button onclick="newSubjectForm()", onclick="initialState() id="new-subjects" class="un" data-bs-dismiss="offcanvas"><i class="bi bi-journal-plus"></i>Nueva Asignatura</button>
+                </li>
+                <li>
+                    <button onclick="showSubjects()", onclick="initialState() id="show-subjects" class="un" data-bs-dismiss="offcanvas"><i class="bi bi-journal-plus"></i>Mostrar Asignaturas</button>
+                </li>
+            </ul>
+            <ul id="tuition-menu" class="navbar-nav justify-content-around ms-5">
+                <li>
+                    <button onclick="newTuitionForm()", onclick="initialState()" id="new-tuitions" class="un" data-bs-dismiss="offcanvas"><i class="bi bi-receipt-cutoff"></i>Matricula Nueva</button>
+                </li>
+                <li>
+                    <button onclick="showTuitions()", onclick="initialState() id="show-tuitions" class="un" data-bs-dismiss="offcanvas"><i class="bi bi-receipt-cutoff"></i>Mostrar Matriculas</button>
+                </li>
 
                 </ul>
             </nav>
@@ -72,22 +111,37 @@
             </footer>
         </aside>
         <main>
-            <div id="contenedor-productos" class="contenedor-productos"></div>
+            <div id="main-container">
+
+              <div id="home"></div>
+              <div id="periods" class="mt-2"></div>
+              <div id="programs" class="mt-2"></div>
+              <div id="fees" class="mt-2"></div>
+              <div id="departments" class="mt-2"></div>
+              <div id="teachers" class="mt-2"></div>
+              <div id="students" class="mt-2"></div>
+              <div id="courses" class="mt-2"></div>
+              <div id="classrooms" class="mt-2"></div>
+              <div id="subjects" class="mt-2"></div>
+              <div id="tuitions" class="mt-2"></div>
+      
+            </div>
         </main>
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="/scripts/app.js"></script>
-    <script src="/scripts/cursos.js"></script>
-    <script src="/scripts/departamentos.js"></script>
-    <script src="/scripts/estudiantes.js"></script>
-    <script src="/scripts/periodos.js"></script>
-    <script src="/scripts/profesores.js"></script>
-    <script src="/scripts/programas.js"></script>
-    <script src="/scripts/salones.js"></script>
-    <script src="/scripts/tarifas.js"></script>
-    <script src="/scripts/utils.js"></script>
     <script src="/scripts/menu.js"></script>
-    <script src="/scripts/main.js"></script>
+    <script src="/scripts/tuitions.js"></script>
+    <script src="/scripts/utils.js"></script>
+    <script src="/scripts/departments.js"></script>
+    <script src="/scripts/courses.js"></script>
+    <script src="/scripts/classrooms.js"></script>
+    <script src="/scripts/subjects.js"></script>
+    <script src="/scripts/students.js"></script>
+    <script src="/scripts/programs.js"></script>
+    <script src="/scripts/teachers.js"></script>
+    <script src="/scripts/fees.js"></script>
+    <script src="/scripts/periods.js"></script>
 </body>
 </html>

@@ -1,777 +1,1432 @@
 {
-  "periodos": [
+  "periods": [
     {
-      "id": 1,
-      "codigo": "P24-01",
-      "ano": 2024,
-      "semestre": 1
+      "id": "1",
+      "code": "P23-02",
+      "year": 2023,
+      "semester": 2
+    },
+    {
+      "id": "2",
+      "code": "P24-01",
+      "year": 2024,
+      "semester": 1
+    }
+  ],
+  "programs": [
+    {
+      "id": "1",
+      "name": "Software Engineering",
+      "degree": "undergraduate"
+    },
+    {
+      "id": "2",
+      "name": "Mecathronics Engineering",
+      "degree": "undergraduate"
+    },
+    {
+      "id": "3",
+      "name": "Electrical Engineering",
+      "degree": "undergraduate"
+    },
+    {
+      "id": "4",
+      "name": "Marketing Management",
+      "degree": "undergraduate"
+    },
+    {
+      "id": "5",
+      "name": "Architecture Degree",
+      "degree": "undergraduate"
+    },
+    {
+      "id": "6",
+      "name": "Chemical Engineer",
+      "degree": "undergraduate"
+    },
+    {
+      "id": "7",
+      "name": "Chemist Pure",
+      "degree": "undergraduate"
+    },
+    {
+      "id": "8",
+      "name": "Medcine Degree",
+      "degree": "undergraduate"
+    },
+    {
+      "id": "9",
+      "name": "International Bussiness",
+      "degree": "undergraduate"
+    },
+    {
+      "id": "10",
+      "name": "Graphic Design",
+      "degree": "undergraduate"
+    }
+  ],
+  "fees": [
+    {
+      "id": "1",
+      "credit_cost": 1200,
+      "period_id": 1,
+      "program_id": 1
+    },
+    {
+      "id": "2",
+      "credit_cost": 1100,
+      "period_id": 1,
+      "program_id": 2
+    },
+    {
+      "id": "3",
+      "credit_cost": 1230,
+      "period_id": 1,
+      "program_id": 3
+    },
+    {
+      "id": "4",
+      "credit_cost": 1150,
+      "period_id": 1,
+      "program_id": 4
+    },
+    {
+      "id": "5",
+      "credit_cost": 1020,
+      "period_id": 1,
+      "program_id": 5
+    },
+    {
+      "id": "6",
+      "credit_cost": 1130,
+      "period_id": 1,
+      "program_id": 6
+    },
+    {
+      "id": "7",
+      "credit_cost": 1010,
+      "period_id": 1,
+      "program_id": 7
+    },
+    {
+      "id": "8",
+      "credit_cost": 1114,
+      "period_id": 1,
+      "program_id": 8
+    },
+    {
+      "id": "9",
+      "credit_cost": 1360,
+      "period_id": 1,
+      "program_id": 9
+    },
+    {
+      "id": "10",
+      "credit_cost": 1230,
+      "period_id": 1,
+      "program_id": 10
+    },
+    {
+      "id": "11",
+      "credit_cost": 1280,
+      "period_id": 2,
+      "program_id": 1
+    },
+    {
+      "id": "12",
+      "credit_cost": 1180,
+      "period_id": 2,
+      "program_id": 2
     },
 
     {
-      "id": 2,
-      "codigo": "P23-02",
-      "ano": 2023,
-      "semestre": 2
+      "id": "13",
+      "credit_cost": 1090,
+      "period_id": 2,
+      "program_id": 3
+    },
+    {
+      "id": "14",
+      "credit_cost": 1190,
+      "period_id": 2,
+      "program_id": 4
+    },
+    {
+      "id": "15",
+      "credit_cost": 1100,
+      "period_id": 2,
+      "program_id": 5
+    },
+    {
+      "id": "16",
+      "credit_cost": 1200,
+      "period_id": 2,
+      "program_id": 6
+    },
+    {
+      "id": "17",
+      "credit_cost": 1110,
+      "period_id": 2,
+      "program_id": 7
+    },
+    {
+      "id": "18",
+      "credit_cost": 1210,
+      "period_id": 2,
+      "program_id": 8
+    },
+    {
+      "id": "19",
+      "credit_cost": 1120,
+      "period_id": 2,
+      "program_id": 9
+    },
+    {
+      "id": "20",
+      "credit_cost": 1220,
+      "period_id": 2,
+      "program_id": 10
     }
   ],
-
-  "programas": [
+  "departments": [
     {
-      "id": 1,
-      "nombre": "Ingeniería de Sistemas",
-      "nivel": "Pregrado"
+      "id": "1",
+      "name": "Software Department"
     },
     {
-      "id": 2,
-      "nombre": "Ingeniería de Mecatronica",
-      "nivel": "Pregrado"
+      "id": "2",
+      "name": "Calculus Department"
     },
     {
-      "id": 3,
-      "nombre": "Diseño Gráfico & Marketing Digital",
-      "nivel": "Pregrado"
+      "id": "3",
+      "name": "Physics Department"
     },
     {
-      "id": 4,
-      "nombre": "Maestría en Machine Learning & Big Data",
-      "nivel": "Postgrado"
+      "id": "4",
+      "name": "Department of Chemistry"
     },
     {
-      "id": 5,
-      "nombre": "Maestría en Materiales Renovables & Energías Verdes",
-      "nivel": "Postgrado"
+      "id": "5",
+      "name": "Marketing Department"
     }
   ],
-  "tarifas": [
-    {
-      "id": 1,
-      "costo_credito": 1000,
-      "periodo_id": 1,
-      "programa_id": 1
-    },
-    {
-      "id": 2,
-      "costo_credito": 1100,
-      "periodo_id": 1,
-      "programa_id": 2
-    },
-    {
-      "id": 3,
-      "costo_credito": 1300,
-      "periodo_id": 2,
-      "programa_id": 3
-    },
-    {
-      "id": 4,
-      "costo_credito": 1700,
-      "periodo_id": 2,
-      "programa_id": 4
-    },
-    {
-      "id": 5,
-      "costo_credito": 1500,
-      "periodo_id": 1,
-      "programa_id": 5
-    }
-  ],
-  "departamentos": [
-    {
-      "id": 1,
-      "nombre": "Departamento de Informática"
-    },
-    {
-      "id": 2,
-      "nombre": "Departamento de Matemáticas"
-    },
-    {
-      "id": 3,
-      "nombre": "Departamento de Ciencias Exactas e Ingenierías"
-    },
-    {
-      "id": 4,
-      "nombre": "Departamento de Comunicación y Marketing"
-    }
-  ],
-  "profesores": [
+  "teachers": [
     {
       "id": 1,
       "tipo_documento": "CC",
       "numero_documento": "13788555",
-      "nombre": "Juan",
-      "apellido": "Pérez",
-      "departamento_id": 1
+      "nombre": "Ana María",
+      "apellido": "Rodríguez",
+      "departamento_id": 12
     },
     {
       "id": 2,
-      "tipo_documento": "CC",
-      "numero_documento": "137880000",
-      "nombre": "María",
+      "tipo_documento": "TI",
+      "numero_documento": "96321023",
+      "nombre": "Juan José",
       "apellido": "Gómez",
-      "departamento_id": 2
+      "departamento_id": 3
     },
     {
       "id": 3,
       "tipo_documento": "CC",
-      "numero_documento": "16878894",
-      "nombre": "David",
-      "apellido": "De la Torre",
-      "departamento_id": 3
+      "numero_documento": "85236987",
+      "nombre": "Laura Andrea",
+      "apellido": "Pérez",
+      "departamento_id": 15
     },
     {
       "id": 4,
-      "tipo_documento": "CC",
-      "numero_documento": "27845700",
-      "nombre": "Simón",
-      "apellido": "Creimer",
-      "departamento_id": 4
+      "tipo_documento": "TI",
+      "numero_documento": "74125836",
+      "nombre": "Carlos Alberto",
+      "apellido": "López",
+      "departamento_id": 7
     },
     {
       "id": 5,
       "tipo_documento": "CC",
-      "numero_documento": "103889777",
-      "nombre": "Lucas",
-      "apellido": "Rodríguez",
-      "departamento_id": 5
+      "numero_documento": "55692147",
+      "nombre": "María Paula",
+      "apellido": "Ramírez",
+      "departamento_id": 9
     },
     {
       "id": 6,
-      "tipo_documento": "CC",
-      "numero_documento": "12345678",
-      "nombre": "Ana",
-      "apellido": "López",
-      "departamento_id": 1
+      "tipo_documento": "TI",
+      "numero_documento": "32165498",
+      "nombre": "Jaime Andrés",
+      "apellido": "Hernández",
+      "departamento_id": 11
     },
     {
       "id": 7,
       "tipo_documento": "CC",
-      "numero_documento": "87965432",
-      "nombre": "Pedro",
+      "numero_documento": "87563214",
+      "nombre": "Valentina",
       "apellido": "González",
       "departamento_id": 2
     },
     {
       "id": 8,
-      "tipo_documento": "CC",
-      "numero_documento": "45612378",
-      "nombre": "Laura",
-      "apellido": "García",
-      "departamento_id": 3
+      "tipo_documento": "TI",
+      "numero_documento": "98745126",
+      "nombre": "Sergio",
+      "apellido": "Díaz",
+      "departamento_id": 5
     },
     {
       "id": 9,
       "tipo_documento": "CC",
-      "numero_documento": "98745612",
-      "nombre": "Carlos",
-      "apellido": "Martínez",
+      "numero_documento": "23654189",
+      "nombre": "Mónica",
+      "apellido": "Sánchez",
+      "departamento_id": 14
+    },
+    {
+      "id": 10,
+      "tipo_documento": "TI",
+      "numero_documento": "54987123",
+      "nombre": "Felipe",
+      "apellido": "Moreno",
+      "departamento_id": 8
+    },
+    {
+      "id": 11,
+      "tipo_documento": "CC",
+      "numero_documento": "65412389",
+      "nombre": "Juliana",
+      "apellido": "García",
+      "departamento_id": 6
+    },
+    {
+      "id": 12,
+      "tipo_documento": "TI",
+      "numero_documento": "78945612",
+      "nombre": "Daniela",
+      "apellido": "Suárez",
+      "departamento_id": 13
+    },
+   {
+      "id": 13,
+      "tipo_documento": "CC",
+      "numero_documento": "34567891",
+      "nombre": "Juan David",
+      "apellido": "Rojas",
+      "departamento_id": 1
+    },
+    {
+      "id": 14,
+      "tipo_documento": "TI",
+      "numero_documento": "23456123",
+      "nombre": "María Camila",
+      "apellido": "Molina",
       "departamento_id": 4
     },
     {
-      "id": 10,
-      "tipo_documento": "CC",
-      "numero_documento": "34598712",
-      "nombre": "Sofía",
-      "apellido": "Sánchez",
-      "departamento_id": 5
-    }
-  ],
-
-  "alumnos": [
-    {
-      "id": 1,
-      "nombre": "Carlos",
-      "apellido": "Rodríguez",
-      "tipo_documento": "Cédula",
-      "numero_documento": "123456789",
-      "ciudad_residencia": "Bogotá",
-      "direccion": "Calle 123",
-      "telefono": "1234567890",
-      "fecha_nacimiento": "1990-01-01",
-      "sexo": "Masculino",
-      "programa_id": 1
-    },
-    {
-      "id": 2,
-      "nombre": "Ana",
-      "apellido": "Martínez",
-      "tipo_documento": "Cédula de Extranjería",
-      "numero_documento": "987654321",
-      "ciudad_residencia": "Medellín",
-      "direccion": "Carrera 456",
-      "telefono": "0987654321",
-      "fecha_nacimiento": "1992-05-15",
-      "sexo": "Femenino",
-      "programa_id": 2
-    },
-    {
-      "id": 3,
-      "nombre": "Juan",
-      "apellido": "Pérez",
-      "tipo_documento": "Cédula",
-      "numero_documento": "987654321",
-      "ciudad_residencia": "Medellín",
-      "direccion": "Carrera 456",
-      "telefono": "0987654321",
-      "fecha_nacimiento": "1995-02-25",
-      "sexo": "Masculino",
-      "programa_id": 2
-    },
-    {
-      "id": 4,
-      "nombre": "María",
-      "apellido": "Gómez",
-      "tipo_documento": "Cédula",
-      "numero_documento": "123123123",
-      "ciudad_residencia": "Bogotá",
-      "direccion": "Carrera 123",
-      "telefono": "1234567890",
-      "fecha_nacimiento": "1998-05-10",
-      "sexo": "Femenino",
-      "programa_id": 1
-    },
-    {
-      "id": 5,
-      "nombre": "David",
-      "apellido": "De la Torre",
-      "tipo_documento": "Cédula",
-      "numero_documento": "456456456",
-      "ciudad_residencia": "Cali",
-      "direccion": "Calle 56",
-      "telefono": "0987654321",
-      "fecha_nacimiento": "2000-08-15",
-      "sexo": "Masculino",
-      "programa_id": 3
-    },
-    {
-      "id": 6,
-      "nombre": "Simón",
-      "apellido": "Creimer",
-      "tipo_documento": "Cédula",
-      "numero_documento": "789789789",
-      "ciudad_residencia": "Bucaramanga",
-      "direccion": "Carrera 78",
-      "telefono": "0987654321",
-      "fecha_nacimiento": "1996-11-20",
-      "sexo": "Masculino",
-      "programa_id": 4
-    },
-
-    {
-      "id": 7,
-      "nombre": "Lucas",
-      "apellido": "Rodríguez",
-      "tipo_documento": "Cédula",
-      "numero_documento": "234234234",
-      "ciudad_residencia": "Bogotá",
-      "direccion": "Carrera 89",
-      "telefono": "0987654321",
-      "fecha_nacimiento": "2001-03-05",
-      "sexo": "Masculino",
-      "programa_id": 5
-    },
-    {
-      "id": 8,
-      "nombre": "Ana",
-      "apellido": "López",
-      "tipo_documento": "Cédula",
-      "numero_documento": "567567567",
-      "ciudad_residencia": "Medellín",
-      "direccion": "Calle 90",
-      "telefono": "0987654321",
-      "fecha_nacimiento": "1997-06-18",
-      "sexo": "Femenino",
-      "programa_id": 2
-    },
-    {
-      "id": 9,
-      "nombre": "Laura",
-      "apellido": "García",
-      "tipo_documento": "Cédula",
-      "numero_documento": "852468795",
-      "ciudad_residencia": "Cali",
-      "direccion": "Carrera 26",
-      "telefono": "3125487962",
-      "fecha_nacimiento": "1999-10-21",
-      "sexo": "Femenino",
-      "programa_id": 3
-    },
-    {
-      "id": 10,
-      "nombre": "Carlos",
-      "apellido": "Martínez",
-      "tipo_documento": "Cédula",
-      "numero_documento": "1596325874",
-      "ciudad_residencia": "Bogotá",
-      "direccion": "Calle 115",
-      "telefono": "3154879632",
-      "fecha_nacimiento": "2001-02-03",
-      "sexo": "Masculino",
-      "programa_id": 1
-    },
-    {
-      "id": 11,
-      "nombre": "Sofía",
-      "apellido": "Sánchez",
-      "tipo_documento": "Cédula",
-      "numero_documento": "9632587415",
-      "ciudad_residencia": "Medellín",
-      "direccion": "Calle 32",
-      "telefono": "3208765432",
-      "fecha_nacimiento": "2000-07-14",
-      "sexo": "Femenino",
-      "programa_id": 2
-    },
-    {
-      "id": 12,
-      "nombre": "Juan",
-      "apellido": "Pérez",
-      "tipo_documento": "Cédula",
-      "numero_documento": "5874159632",
-      "ciudad_residencia": "Cartagena",
-      "direccion": "Calle 55",
-      "telefono": "3128765432",
-      "fecha_nacimiento": "1998-11-25",
-      "sexo": "Masculino",
-      "programa_id": 3
-    },
-    {
-      "id": 13,
-      "nombre": "María",
-      "apellido": "Gómez",
-      "tipo_documento": "Cédula",
-      "numero_documento": "2587415963",
-      "ciudad_residencia": "Barranquilla",
-      "direccion": "Carrera 45",
-      "telefono": "3108765432",
-      "fecha_nacimiento": "2002-04-07",
-      "sexo": "Femenino",
-      "programa_id": 1
-    },
-    {
-      "id": 14,
-      "nombre": "David",
-      "apellido": "De la Torre",
-      "tipo_documento": "Cédula",
-      "numero_documento": "8741596325",
-      "ciudad_residencia": "Manizales",
-      "direccion": "Calle 63",
-      "telefono": "3218765432",
-      "fecha_nacimiento": "1999-08-30",
-      "sexo": "Masculino",
-      "programa_id": 2
-    }
-  ],
-  "cursos": [
-    {
-      "id": 1,
-      "nombre": "Programación Avanzada",
-      "codigo": "PROG-AVA",
-      "guia_catedra": "URL_Guia_Catedra.pdf"
-    },
-    {
-      "id": 2,
-      "nombre": "Álgebra Lineal",
-      "codigo": "ALG-LI",
-      "guia_catedra": "URL_Guia_Catedra.pdf"
-    },
-    {
-      "id": 3,
-      "nombre": "Estructuras de Datos",
-      "codigo": "EDATOS",
-      "guia_catedra": "URL_Guia_Catedra.pdf"
-    },
-    {
-      "id": 4,
-      "nombre": "Introducción  a la Ingeniería en Software",
-      "codigo": "IIS",
-      "guia_catedra": "URL_Guia_Catedra.pdf"
-    },
-    {
-      "id": 5,
-      "nombre": "Metodologías del Diseño & la Comunicación",
-      "codigo": "MED&C",
-      "guia_catedra": "URL_Guia_Catedra.pdf"
-    }
-  ],
-  "salones": [
-    {
-      "id": 1,
-      "capacidad_alumnos": 35,
-      "edificio": "Edificio A",
-      "piso": 2,
-      "numero_identificacion": "S001"
-    },
-    {
-      "id": 2,
-      "capacidad_alumnos": 35,
-      "edificio": "Edificio A",
-      "piso": 5,
-      "numero_identificacion": "S002"
-    },
-    {
-      "id": 3,
-      "capacidad_alumnos": 35,
-      "edificio": "Edificio A",
-      "piso": 3,
-      "numero_identificacion": "S003"
-    },
-    {
-      "id": 4,
-      "capacidad_alumnos": 35,
-      "edificio": "Edificio A",
-      "piso": 1,
-      "numero_identificacion": "S004"
-    },
-    {
-      "id": 5,
-      "capacidad_alumnos": 35,
-      "edificio": "Edificio A",
-      "piso": 4,
-      "numero_identificacion": "S005"
-    },
-    {
-      "id": 6,
-      "capacidad_alumnos": 35,
-      "edificio": "Edificio B",
-      "piso": 2,
-      "numero_identificacion": "S006"
-    },
-    {
-      "id": 7,
-      "capacidad_alumnos": 35,
-      "edificio": "Edificio B",
-      "piso": 5,
-      "numero_identificacion": "S007"
-    },
-    {
-      "id": 8,
-      "capacidad_alumnos": 35,
-      "edificio": "Edificio B",
-      "piso": 3,
-      "numero_identificacion": "S008"
-    },
-    {
-      "id": 9,
-      "capacidad_alumnos": 35,
-      "edificio": "Edificio B",
-      "piso": 1,
-      "numero_identificacion": "S009"
-    },
-    {
-      "id": 10,
-      "capacidad_alumnos": 35,
-      "edificio": "Edificio B",
-      "piso": 4,
-      "numero_identificacion": "S010"
-    },
-    {
-      "id": 11,
-      "capacidad_alumnos": 35,
-      "edificio": "Edificio C",
-      "piso": 2,
-      "numero_identificacion": "S011"
-    },
-    {
-      "id": 12,
-      "capacidad_alumnos": 35,
-      "edificio": "Edificio C",
-      "piso": 5,
-      "numero_identificacion": "S012"
-    },
-    {
-      "id": 13,
-      "capacidad_alumnos": 35,
-      "edificio": "Edificio C",
-      "piso": 3,
-      "numero_identificacion": "S013"
-    },
-    {
-      "id": 14,
-      "capacidad_alumnos": 35,
-      "edificio": "Edificio C",
-      "piso": 1,
-      "numero_identificacion": "S014"
-    },
-    {
       "id": 15,
-      "capacidad_alumnos": 35,
-      "edificio": "Edificio C",
-      "piso": 4,
-      "numero_identificacion": "S015"
+      "tipo_documento": "CC",
+      "numero_documento": "98765432",
+      "nombre": "Jorge",
+      "apellido": "Mendoza",
+      "departamento_id": 10
     },
     {
       "id": 16,
-      "capacidad_alumnos": 35,
-      "edificio": "Edificio A",
-      "piso": 5,
-      "numero_identificacion": "S016"
+      "tipo_documento": "TI",
+      "numero_documento": "12345678",
+      "nombre": "Sofía",
+      "apellido": "Pulgarín",
+      "departamento_id": 16
     },
     {
       "id": 17,
-      "capacidad_alumnos": 35,
-      "edificio": "Edificio A",
-      "piso": 3,
-      "numero_identificacion": "S017"
+      "tipo_documento": "CC",
+      "numero_documento": "45678912",
+      "nombre": "Diego",
+      "apellido": "Vargas",
+      "departamento_id": 17
     },
     {
       "id": 18,
-      "capacidad_alumnos": 35,
-      "edificio": "Edificio A",
-      "piso": 1,
-      "numero_identificacion": "S018"
+      "tipo_documento": "TI",
+      "numero_documento": "89123456",
+      "nombre": "Jessica",
+      "apellido": "Castro",
+      "departamento_id": 18
     },
     {
       "id": 19,
-      "capacidad_alumnos": 35,
-      "edificio": "Edificio A",
-      "piso": 4,
-      "numero_identificacion": "S019"
+      "tipo_documento": "CC",
+      "numero_documento": "78912345",
+      "nombre": "Catalina",
+      "apellido": "Zapata",
+      "departamento_id": 19
     },
     {
       "id": 20,
-      "capacidad_alumnos": 35,
-      "edificio": "Edificio B",
-      "piso": 2,
-      "numero_identificacion": "S020"
-    },
-    {
-      "id": 21,
-      "capacidad_alumnos": 35,
-      "edificio": "Edificio B",
-      "piso": 5,
-      "numero_identificacion": "S021"
-    },
-    {
-      "id": 22,
-      "capacidad_alumnos": 35,
-      "edificio": "Edificio B",
-      "piso": 3,
-      "numero_identificacion": "S022"
+      "tipo_documento": "TI",
+      "numero_documento": "56123478",
+      "nombre": "Juan Sebastián",
+      "apellido": "Ruiz",
+      "departamento_id": 20
     }
   ],
-
-  "asignaturas": [
+  "students":[
     {
-      "id": 1,
-      "curso_id": 1,
-      "codigo": "PROG-AVA-PER-2024",
-      "creditos": 4,
-      "profesor_id": 1,
-      "cupos_disponibles": 20,
-      "programa_id": 1,
-      "horario_clases": [
+      "id": "1",
+      "first_name": "Carlos",
+      "last_name": "Rodríguez",
+      "document_type": "CC",
+      "document_number": "123456789",
+      "residence_city": "Bogotá",
+      "direction": "Calle 123",
+      "phone": "1234567890",
+      "birthdate": "1990-01-01",
+      "gender": "Male",
+      "program_id": 3
+    },
+    {
+      "id": "2",
+      "first_name": "Ana",
+      "last_name": "Gómez",
+      "document_type": "TI",
+      "document_number": "987654321",
+      "residence_city": "Medellín",
+      "direction": "Carrera 45",
+      "phone": "9876543210",
+      "birthdate": "1995-05-15",
+      "gender": "Female",
+      "program_id": 5
+    },
+    {
+      "id": "3",
+      "first_name": "Juan",
+      "last_name": "Pérez",
+      "document_type": "CC",
+      "document_number": "2345678901",
+      "residence_city": "Cali",
+      "direction": "Calle 78",
+      "phone": "2345678901",
+      "birthdate": "1985-08-08",
+      "gender": "Male",
+      "program_id": 1
+    },
+    {
+      "id": "4",
+      "first_name": "Laura",
+      "last_name": "López",
+      "document_type": "TI",
+      "document_number": "8765432109",
+      "residence_city": "Barranquilla",
+      "direction": "Carrera 21",
+      "phone": "8765432109",
+      "birthdate": "1992-12-25",
+      "gender": "Female",
+      "program_id": 2
+    },
+    {
+      "id": "5",
+      "first_name": "Miguel",
+      "last_name": "Hernández",
+      "document_type": "CC",
+      "document_number": "3456789012",
+      "residence_city": "Bucaramanga",
+      "direction": "Calle 11",
+      "phone": "3456789012",
+      "birthdate": "1988-03-03",
+      "gender": "Male",
+      "program_id": 4
+    },
+    {
+      "id": "6",
+      "first_name": "Maria",
+      "last_name": "Suárez",
+      "document_type": "TI",
+      "document_number": "9012345678",
+      "residence_city": "Cartagena",
+      "direction": "Carrera 32",
+      "phone": "9012345678",
+      "birthdate": "1993-06-17",
+      "gender": "Female",
+      "program_id": 5
+    },
+    {
+      "id": "7",
+      "first_name": "Daniel",
+      "last_name": "García",
+      "document_type": "CC",
+      "document_number": "4567890123",
+      "residence_city": "Cúcuta",
+      "direction": "Calle 90",
+      "phone": "4567890123",
+      "birthdate": "1987-09-22",
+      "gender": "Male",
+      "program_id": 3
+    },
+    {
+      "id": "8",
+      "first_name": "Sofia",
+      "last_name": "Ramírez",
+      "document_type": "TI",
+      "document_number": "8901234567",
+      "residence_city": "Manizales",
+      "direction": "Carrera 15",
+      "phone": "8901234567",
+      "birthdate": "1994-04-04",
+      "gender": "Female",
+      "program_id": 1
+    },
+    {
+      "id": "9",
+      "first_name": "David",
+      "last_name": "Sánchez",
+      "document_type": "CC",
+      "document_number": "5678901234",
+      "residence_city": "Pereira",
+      "direction": "Calle 55",
+      "phone": "5678901234",
+      "birthdate": "1986-11-11",
+      "gender": "Male",
+      "program_id": 2
+    },
+    {
+      "id": "10",
+      "first_name": "Valentina",
+      "last_name": "Ortiz",
+      "document_type": "TI",
+      "document_number": "7890123456",
+      "residence_city": "Ibagué",
+      "direction": "Carrera 25",
+      "phone": "7890123456",
+      "birthdate": "1991-07-07",
+      "gender": "Female",
+      "program_id": 4
+    },
+    {
+      "id": "11",
+      "first_name": "Juan",
+      "last_name": "Díaz",
+      "document_type": "CC",
+      "document_number": "6789012345",
+      "residence_city": "Santa Marta",
+      "direction": "Calle 88",
+      "phone": "6789012345",
+      "birthdate": "1989-10-10",
+      "gender": "Male",
+      "program_id": 5
+    },
+    {
+      "id": "12",
+      "first_name": "Maria",
+      "last_name": "González",
+      "document_type": "TI",
+      "document_number": "5678901234",
+      "residence_city": "Villavicencio",
+      "direction": "Carrera 30",
+      "phone": "5678901234",
+      "birthdate": "1996-02-02",
+      "gender": "Female",
+      "program_id": 1
+    },
+    {
+      "id": "13",
+      "first_name": "Pedro",
+      "last_name": "Rodríguez",
+      "document_type": "CC",
+      "document_number": "4567890123",
+      "residence_city": "Bogotá",
+      "direction": "Calle 110",
+      "phone": "4567890123",
+      "birthdate": "1984-06-16",
+      "gender": "Male",
+      "program_id": 3
+    },
+    {
+      "id": "14",
+      "first_name": "Ana",
+      "last_name": "Gómez",
+      "document_type": "TI",
+      "document_number": "9876543210",
+      "residence_city": "Medellín",
+      "direction": "Carrera 40",
+      "phone": "9876543210",
+      "birthdate": "1997-08-18",
+      "gender": "Female",
+      "program_id": 2
+    },
+    {
+      "id": "15",
+      "first_name": "Juan",
+      "last_name": "Pérez",
+      "document_type": "CC",
+      "document_number": "2345678901",
+      "residence_city": "Cali",
+      "direction": "Calle 70",
+      "phone": "2345678901",
+      "birthdate": "1983-12-27",
+      "gender": "Male",
+      "program_id": 4
+    },
+    {
+      "id": "16",
+      "first_name": "Laura",
+      "last_name": "López",
+      "document_type": "TI",
+      "document_number": "8765432109",
+      "residence_city": "Barranquilla",
+      "direction": "Carrera 20",
+      "phone": "8765432109",
+      "birthdate": "1998-05-05",
+      "gender": "Female",
+      "program_id": 5
+    },
+    {
+      "id": "17",
+      "first_name": "Miguel",
+      "last_name": "Hernández",
+      "document_type": "CC",
+      "document_number": "3456789012",
+      "residence_city": "Bucaramanga",
+      "direction": "Calle 10",
+      "phone": "3456789012",
+      "birthdate": "1982-09-09",
+      "gender": "Male",
+      "program_id": 1
+    },
+    {
+      "id": "18",
+      "first_name": "Maria",
+      "last_name": "Suárez",
+      "document_type": "TI",
+      "document_number": "9012345678",
+      "residence_city": "Cartagena",
+      "direction": "Carrera 35",
+      "phone": "9012345678",
+      "birthdate": "1999-01-01",
+      "gender": "Female",
+      "program_id": 2
+    },
+    {
+      "id": "19",
+      "first_name": "Daniel",
+      "last_name": "García",
+      "document_type": "CC",
+      "document_number": "4567890123",
+      "residence_city": "Cúcuta",
+      "direction": "Calle 85",
+      "phone": "4567890123",
+      "birthdate": "1981-03-13",
+      "gender": "Male",
+      "program_id": 3
+    },
+    {
+      "id": "20",
+      "first_name": "Sofia",
+      "last_name": "Ramírez",
+      "document_type": "TI",
+      "document_number": "8901234567",
+      "residence_city": "Manizales",
+      "direction": "Carrera 10",
+      "phone": "8901234567",
+      "birthdate": "2000-06-15",
+      "gender": "Female",
+      "program_id": 4
+    },
+    {
+      "id": "21",
+      "first_name": "David",
+      "last_name": "Sánchez",
+      "document_type": "CC",
+      "document_number": "5678901234",
+      "residence_city": "Pereira",
+      "direction": "Calle 45",
+      "phone": "5678901234",
+      "birthdate": "1980-10-25",
+      "gender": "Male",
+      "program_id": 5
+    },
+    {
+      "id": "22",
+      "first_name": "Valentina",
+      "last_name": "Ortiz",
+      "document_type": "TI",
+      "document_number": "7890123456",
+      "residence_city": "Ibagué",
+      "direction": "Carrera 22",
+      "phone": "7890123456",
+      "birthdate": "2001-07-07",
+      "gender": "Female",
+      "program_id": 1
+    },
+    {
+      "id": "23",
+      "first_name": "Juan",
+      "last_name": "Díaz",
+      "document_type": "CC",
+      "document_number": "6789012345",
+      "residence_city": "Santa Marta",
+      "direction": "Calle 80",
+      "phone": "6789012345",
+      "birthdate": "1979-11-11",
+      "gender": "Male",
+      "program_id": 2
+    },
+    {
+      "id": "24",
+      "first_name": "Maria",
+      "last_name": "González",
+      "document_type": "TI",
+      "document_number": "5678901234",
+      "residence_city": "Villavicencio",
+      "direction": "Carrera 35",
+      "phone": "5678901234",
+      "birthdate": "2002-02-02",
+      "gender": "Female",
+      "program_id": 3
+    },
+    {
+      "id": "25",
+      "first_name": "Pedro",
+      "last_name": "Rodríguez",
+      "document_type": "CC",
+      "document_number": "4567890123",
+      "residence_city": "Bogotá",
+      "direction": "Calle 115",
+      "phone": "4567890123",
+      "birthdate": "1978-06-16",
+      "gender": "Male",
+      "program_id": 4
+    },
+    {
+      "id": "26",
+      "first_name": "Ana",
+      "last_name": "Gómez",
+      "document_type": "TI",
+      "document_number": "9876543210",
+      "residence_city": "Medellín",
+      "direction": "Carrera 45",
+      "phone": "9876543210",
+      "birthdate": "2003-08-18",
+      "gender": "Female",
+      "program_id": 5
+    },
+    {
+      "id": "27",
+      "first_name": "Juan",
+      "last_name": "Pérez",
+      "document_type": "CC",
+      "document_number": "2345678901",
+      "residence_city": "Cali",
+      "direction": "Calle 65",
+      "phone": "2345678901",
+      "birthdate": "1977-12-27",
+      "gender": "Male",
+      "program_id": 1
+    },
+    {
+      "id": "28",
+      "first_name": "Laura",
+      "last_name": "López",
+      "document_type": "TI",
+      "document_number": "8765432109",
+      "residence_city": "Barranquilla",
+      "direction": "Carrera 25",
+      "phone": "8765432109",
+      "birthdate": "2004-05-05",
+      "gender": "Female",
+      "program_id": 2
+    },
+    {
+      "id": "29",
+      "first_name": "Miguel",
+      "last_name": "Hernández",
+      "document_type": "CC",
+      "document_number": "3456789012",
+      "residence_city": "Bucaramanga",
+      "direction": "Calle 5",
+      "phone": "3456789012",
+      "birthdate": "1976-09-09",
+      "gender": "Male",
+      "program_id": 3
+    },
+    {
+      "id": "30",
+      "first_name": "Maria",
+      "last_name": "Suárez",
+      "document_type": "TI",
+      "document_number": "9012345678",
+      "residence_city": "Cartagena",
+      "direction": "Carrera 40",
+      "phone": "9012345678",
+      "birthdate": "2005-01-01",
+      "gender": "Female",
+      "program_id": 4
+    },
+    {
+      "id": "31",
+      "first_name": "Daniel",
+      "last_name": "García",
+      "document_type": "CC",
+      "document_number": "4567890123",
+      "residence_city": "Cúcuta",
+      "direction": "Calle 75",
+      "phone": "4567890123",
+      "birthdate": "1975-03-13",
+      "gender": "Male",
+      "program_id": 5
+    },
+    {
+      "id": "32",
+      "first_name": "Sofia",
+      "last_name": "Ramírez",
+      "document_type": "TI",
+      "document_number": "8901234567",
+      "residence_city": "Manizales",
+      "direction": "Carrera 5",
+      "phone": "8901234567",
+      "birthdate": "2006-06-15",
+      "gender": "Female",
+      "program_id": 1
+    },
+    {
+      "id": "33",
+      "first_name": "David",
+      "last_name": "Sánchez",
+      "document_type": "CC",
+      "document_number": "5678901234",
+      "residence_city": "Pereira",
+      "direction": "Calle 35",
+      "phone": "5678901234",
+      "birthdate": "1974-10-25",
+      "gender": "Male",
+      "program_id": 2
+    },
+    {
+      "id": "34",
+      "first_name": "Valentina",
+      "last_name": "Ortiz",
+      "document_type": "TI",
+      "document_number": "7890123456",
+      "residence_city": "Ibagué",
+      "direction": "Carrera 28",
+      "phone": "7890123456",
+      "birthdate": "2007-07-07",
+      "gender": "Female",
+      "program_id": 3
+    },
+    {
+      "id": "35",
+      "first_name": "Juan",
+      "last_name": "Díaz",
+      "document_type": "CC",
+      "document_number": "6789012345",
+      "residence_city": "Santa Marta",
+      "direction": "Calle 70",
+      "phone": "6789012345",
+      "birthdate": "1973-11-11",
+      "gender": "Male",
+      "program_id": 4
+    },
+    {
+      "id": "36",
+      "first_name": "Maria",
+      "last_name": "González",
+      "document_type": "TI",
+      "document_number": "5678901234",
+      "residence_city": "Villavicencio",
+      "direction": "Carrera 40",
+      "phone": "5678901234",
+      "birthdate": "2008-02-02",
+      "gender": "Female",
+      "program_id": 5
+    },
+    {
+      "id": "37",
+      "first_name": "Pedro",
+      "last_name": "Rodríguez",
+      "document_type": "CC",
+      "document_number": "4567890123",
+      "residence_city": "Bogotá",
+      "direction": "Calle 120",
+      "phone": "4567890123",
+      "birthdate": "1972-06-16",
+      "gender": "Male",
+      "program_id": 1
+    },
+    {
+      "id": "38",
+      "first_name": "Ana",
+      "last_name": "Gómez",
+      "document_type": "TI",
+      "document_number": "9876543210",
+      "residence_city": "Medellín",
+      "direction": "Carrera 50",
+      "phone": "9876543210",
+      "birthdate": "2009-08-18",
+      "gender": "Female",
+      "program_id": 2
+    },
+    {
+      "id": "39",
+      "first_name": "Juan",
+      "last_name": "Pérez",
+      "document_type": "CC",
+      "document_number": "2345678901",
+      "residence_city": "Cali",
+      "direction": "Calle 55",
+      "phone": "2345678901",
+      "birthdate": "1971-12-27",
+      "gender": "Male",
+      "program_id": 3
+    },
+    {
+      "id": "40",
+      "first_name": "Laura",
+      "last_name": "López",
+      "document_type": "TI",
+      "document_number": "8765432109",
+      "residence_city": "Barranquilla",
+      "direction": "Carrera 30",
+      "phone": "8765432109",
+      "birthdate": "2010-05-05",
+      "gender": "Female",
+      "program_id": 4
+    },
+    {
+      "id": "41",
+      "first_name": "Miguel",
+      "last_name": "Hernández",
+      "document_type": "CC",
+      "document_number": "3456789012",
+      "residence_city": "Bucaramanga",
+      "direction": "Calle 2",
+      "phone": "3456789012",
+      "birthdate": "1970-09-09",
+      "gender": "Male",
+      "program_id": 5
+    },
+    {
+      "id": "42",
+      "first_name": "Maria",
+      "last_name": "Suárez",
+      "document_type": "TI",
+      "document_number": "9012345678",
+      "residence_city": "Cartagena",
+      "direction": "Carrera 45",
+      "phone": "9012345678",
+      "birthdate": "2011-01-01",
+      "gender": "Female",
+      "program_id": 1
+    },
+    {
+      "id": "43",
+      "first_name": "Daniel",
+      "last_name": "García",
+      "document_type": "CC",
+      "document_number": "4567890123",
+      "residence_city": "Cúcuta",
+      "direction": "Calle 65",
+      "phone": "4567890123",
+      "birthdate": "1969-03-13",
+      "gender": "Male",
+      "program_id": 2
+    },
+    {
+      "id": "44",
+      "first_name": "Sofia",
+      "last_name": "Ramírez",
+      "document_type": "TI",
+      "document_number": "8901234567",
+      "residence_city": "Manizales",
+      "direction": "Carrera 1",
+      "phone": "8901234567",
+      "birthdate": "2012-06-15",
+      "gender": "Female",
+      "program_id": 3
+    },
+    {
+      "id": "45",
+      "first_name": "David",
+      "last_name": "Sánchez",
+      "document_type": "CC",
+      "document_number": "5678901234",
+      "residence_city": "Pereira",
+      "direction": "Calle 25",
+      "phone": "5678901234",
+      "birthdate": "1968-10-25",
+      "gender": "Male",
+      "program_id": 4
+    },
+    {
+      "id": "46",
+      "first_name": "Valentina",
+      "last_name": "Ortiz",
+      "document_type": "TI",
+      "document_number": "7890123456",
+      "residence_city": "Ibagué",
+      "direction": "Carrera 33",
+      "phone": "7890123456",
+      "birthdate": "2013-07-07",
+      "gender": "Female",
+      "program_id": 5
+    },
+    {
+      "id": "47",
+      "first_name": "Juan",
+      "last_name": "Díaz",
+      "document_type": "CC",
+      "document_number": "6789012345",
+      "residence_city": "Santa Marta",
+      "direction": "Calle 60",
+      "phone": "6789012345",
+      "birthdate": "1967-11-11",
+      "gender": "Male",
+      "program_id": 1
+    },
+    {
+      "id": "48",
+      "first_name": "Maria",
+      "last_name": "González",
+      "document_type": "TI",
+      "document_number": "5678901234",
+      "residence_city": "Villavicencio",
+      "direction": "Carrera 45",
+      "phone": "5678901234",
+      "birthdate": "2014-02-02",
+      "gender": "Female",
+      "program_id": 2
+    },
+   {
+      "id": "49",
+      "first_name": "Pedro",
+      "last_name": "Rodríguez",
+      "document_type": "CC",
+      "document_number": "4567890123",
+      "residence_city": "Bogotá",
+      "direction": "Calle 125",
+      "phone": "4567890123",
+      "birthdate": "1966-06-16",
+      "gender": "Male",
+      "program_id": 3
+    },
+    {
+      "id": "50",
+      "first_name": "Ana",
+      "last_name": "Gómez",
+      "document_type": "TI",
+      "document_number": "9876543210",
+      "residence_city": "Medellín",
+      "direction": "Carrera 55",
+      "phone": "9876543210",
+      "birthdate": "2015-08-18",
+      "gender": "Female",
+      "program_id": 4
+    }
+  ],
+  "courses": [
+    {
+      "id": "1",
+      "name": "Advanced programming",
+      "code": "AVA-PRO",
+      "lecture_guide": "URL_lecture_guide.pdf"
+    },
+    {
+      "id": "2",
+      "name": "Linear Algebra",
+      "code": "LI-ALG",
+      "lecture_guide": "URL_lecture_guide.pdf"
+    },
+    {
+      "id": "3",
+      "name": "Data Structures",
+      "code": "DAT-STR",
+      "lecture_guide": "URL_lecture_guide.pdf"
+    },
+    {
+      "id": "4",
+      "name": "Object-Oriented Programming",
+      "code": "OOP",
+      "lecture_guide": "URL_lecture_guide.pdf"
+    },
+    {
+      "id": "5",
+      "name": "Database Management Systems",
+      "code": "DBMS",
+      "lecture_guide": "URL_lecture_guide.pdf"
+    },
+    {
+      "id": "6",
+      "name": "Software Engineering",
+      "code": "SOFT-ENG",
+      "lecture_guide": "URL_lecture_guide.pdf"
+    },
+    {
+      "id": "7",
+      "name": "Computer Networks",
+      "code": "COMP-NET",
+      "lecture_guide": "URL_lecture_guide.pdf"
+    },
+    {
+      "id": "8",
+      "name": "Algorithms",
+      "code": "ALG",
+      "lecture_guide": "URL_lecture_guide.pdf"
+    },
+    {
+      "id": "9",
+      "name": "Web Development",
+      "code": "WEB-DEV",
+      "lecture_guide": "URL_lecture_guide.pdf"
+    },
+    {
+      "id": "10",
+      "name": "Operating Systems",
+      "code": "OS",
+      "lecture_guide": "URL_lecture_guide.pdf"
+    },
+    {
+      "id": "11",
+      "name": "Artificial Intelligence",
+      "code": "AI",
+      "lecture_guide": "URL_lecture_guide.pdf"
+    },
+    {
+      "id": "12",
+      "name": "Computer Graphics",
+      "code": "COMP-GR",
+      "lecture_guide": "URL_lecture_guide.pdf"
+    },
+    {
+      "id": "13",
+      "name": "Mobile Application Development",
+      "code": "MOB-APP",
+      "lecture_guide": "URL_lecture_guide.pdf"
+    },
+    {
+      "id": "14",
+      "name": "Cybersecurity",
+      "code": "SEC",
+      "lecture_guide": "URL_lecture_guide.pdf"
+    },
+    {
+      "id": "15",
+      "name": "Data Science",
+      "code": "DAT-SCI",
+      "lecture_guide": "URL_lecture_guide.pdf"
+    },
+    {
+      "id": "16",
+      "name": "Cloud Computing",
+      "code": "CLOUD-COMP",
+      "lecture_guide": "URL_lecture_guide.pdf"
+    },
+    {
+      "id": "17",
+      "name": "Human-Computer Interaction",
+      "code": "HCI",
+      "lecture_guide": "URL_lecture_guide.pdf"
+    },
+    {
+      "id": "18",
+      "name": "Embedded Systems",
+      "code": "EMB-SYS",
+      "lecture_guide": "URL_lecture_guide.pdf"
+    },
+    {
+      "id": "19",
+      "name": "Big Data",
+      "code": "BIG-DATA",
+      "lecture_guide": "URL_lecture_guide.pdf"
+    },
+    {
+      "id": "20",
+      "name": "Machine Learning",
+      "code": "ML",
+      "lecture_guide": "URL_lecture_guide.pdf"
+    },
+    {
+      "id": "21",
+      "name": "Computer Architecture",
+      "code": "COMP-ARCH",
+      "lecture_guide": "URL_lecture_guide.pdf"
+    },
+    {
+      "id": "22",
+      "name": "Natural Language Processing",
+      "code": "NLP",
+      "lecture_guide": "URL_lecture_guide.pdf"
+    },
+    {
+      "id": "23",
+      "name": "Computer Vision",
+      "code": "COMP-VIS",
+      "lecture_guide": "URL_lecture_guide.pdf"
+    },
+    {
+      "id": "24",
+      "name": "Distributed Systems",
+      "code": "DIST-SYS",
+      "lecture_guide": "URL_lecture_guide.pdf"
+    },
+    {
+      "id": "25",
+      "name": "Robotics",
+      "code": "ROBOTICS",
+      "lecture_guide": "URL_lecture_guide.pdf"
+    },
+    {
+      "id": "26",
+      "name": "Blockchain Technology",
+      "code": "BLOCK-TECH",
+      "lecture_guide": "URL_lecture_guide.pdf"
+    },
+    {
+      "id": "27",
+      "name": "Parallel Computing",
+      "code": "PARA-COMP",
+      "lecture_guide": "URL_lecture_guide.pdf"
+    },
+    {
+      "id": "28",
+      "name": "Information Retrieval",
+      "code": "INFO-RET",
+      "lecture_guide": "URL_lecture_guide.pdf"
+    },
+    {
+      "id": "29",
+      "name": "Virtual Reality",
+      "code": "VR",
+      "lecture_guide": "URL_lecture_guide.pdf"
+    },
+    {
+      "id": "30",
+      "name": "Compiler Design",
+      "code": "COMP-DES",
+      "lecture_guide": "URL_lecture_guide.pdf"
+    }
+  ],
+  "classrooms": [
+    {
+      "id": "1",
+      "students_capacity": 30,
+      "building": "building A",
+      "floor": 2,
+      "identification_number": "S001"
+    },
+    {
+      "id": "2",
+      "students_capacity": 25,
+      "building": "building B",
+      "floor": 1,
+      "identification_number": "S002"
+    },
+    {
+      "id": "3",
+      "students_capacity": 28,
+      "building": "building C",
+      "floor": 3,
+      "identification_number": "S003"
+    },
+    {
+      "id": "4",
+      "students_capacity": 35,
+      "building": "building D",
+      "floor": 4,
+      "identification_number": "S004"
+    },
+    {
+      "id": "5",
+      "students_capacity": 32,
+      "building": "building E",
+      "floor": 2,
+      "identification_number": "S005"
+    },
+    {
+      "id": "6",
+      "students_capacity": 27,
+      "building": "building F",
+      "floor": 1,
+      "identification_number": "S006"
+    },
+    {
+      "id": "7",
+      "students_capacity": 33,
+      "building": "building G",
+      "floor": 3,
+      "identification_number": "S007"
+    },
+    {
+      "id": "8",
+      "students_capacity": 29,
+      "building": "building H",
+      "floor": 4,
+      "identification_number": "S008"
+    },
+    {
+      "id": "9",
+      "students_capacity": 26,
+      "building": "building I",
+      "floor": 2,
+      "identification_number": "S009"
+    },
+    {
+      "id": "10",
+      "students_capacity": 31,
+      "building": "building J",
+      "floor": 1,
+      "identification_number": "S010"
+    },
+    {
+      "id": "11",
+      "students_capacity": 30,
+      "building": "building K",
+      "floor": 3,
+      "identification_number": "S011"
+    },
+    {
+      "id": "12",
+      "students_capacity": 25,
+      "building": "building L",
+      "floor": 4,
+      "identification_number": "S012"
+    },
+    {
+      "id": "13",
+      "students_capacity": 28,
+      "building": "building M",
+      "floor": 2,
+      "identification_number": "S013"
+    },
+    {
+      "id": "14",
+      "students_capacity": 35,
+      "building": "building N",
+      "floor": 1,
+      "identification_number": "S014"
+    },
+    {
+      "id": "15",
+      "students_capacity": 32,
+      "building": "building O",
+      "floor": 3,
+      "identification_number": "S015"
+    },
+    {
+      "id": "16",
+      "students_capacity": 27,
+      "building": "building P",
+      "floor": 2,
+      "identification_number": "S016"
+    },
+    {
+      "id": "17",
+      "students_capacity": 33,
+      "building": "building Q",
+      "floor": 1,
+      "identification_number": "S017"
+    },
+    {
+      "id": "18",
+      "students_capacity": 29,
+      "building": "building R",
+      "floor": 4,
+      "identification_number": "S018"
+    },
+    {
+      "id": "19",
+      "students_capacity": 26,
+      "building": "building S",
+      "floor": 2,
+      "identification_number": "S019"
+    },
+    {
+      "id": "20",
+      "students_capacity": 31,
+      "building": "building T",
+      "floor": 1,
+      "identification_number": "S020"
+    }
+  ],
+  "subjects": [
+    {
+      "id": "1",
+      "course_id": 1,
+      "code": "AVA-PRO-PER-2024",
+      "credits": 4,
+      "teacher_id": 1,
+      "space_available": 20,
+      "program_id": 1,
+      "class_schedule": [
         {
-          "dia": "Lunes",
-          "hora_inicio": "08:00",
-          "hora_fin": "10:00",
-          "salon_id": 1
+          "day": "Monday",
+          "start_hour": "08:00",
+          "end_hour": "10:00",
+          "classroom_id": 1
         },
         {
-          "dia": "Martes",
-          "hora_inicio": "08:00",
-          "hora_fin": "10:00",
-          "salon_id": 1
+          "day": "TUESDAY",
+          "start_hour": "08:00",
+          "end_hour": "10:00",
+          "classroom_id": 1
         }
       ]
     },
     {
-      "id": 2,
-      "curso_id": 2,
-      "codigo": "ALG-LI-PER-2024",
-      "creditos": 3,
-      "profesor_id": 2,
-      "cupos_disponibles": 15,
-      "programa_id": 2,
-      "horario_clases": [
+      "id": "2",
+      "course_id": 2,
+      "code": "LI-ALG-PER-2024",
+      "credits": 3,
+      "teacher_id": 2,
+      "space_available": 15,
+      "program_id": 2,
+      "class_schedule": [
         {
-          "dia": "Lunes",
-          "hora_inicio": "10:00",
-          "hora_fin": "12:00",
-          "salon_id": 1
+          "day": "Monday",
+          "start_hour": "10:00",
+          "end_hour": "12:00",
+          "classroom_id": 1
         },
         {
-          "dia": "Jueves",
-          "hora_inicio": "10:00",
-          "hora_fin": "12:00",
-          "salon_id": 1
+          "day": "Thursday",
+          "start_hour": "10:00",
+          "end_hour": "12:00",
+          "classroom_id": 1
         }
       ]
     },
     {
       "id": 3,
-      "curso_id": 3,
-      "codigo": "BD-INT-PER-2024",
-      "creditos": 4,
-      "profesor_id": 3,
-      "cupos_disponibles": 25,
-      "programa_id": 1,
-      "horario_clases": [
+      "course_id": "1",
+      "code": "1",
+      "credits": "4",
+      "teacher_id": "1",
+      "space_available": "20",
+      "program_id": "2",
+      "class_schedule": [
         {
-          "dia": "Miércoles",
-          "hora_inicio": "08:00",
-          "hora_fin": "10:00",
-          "salon_id": 2
-        },
-        {
-          "dia": "Viernes",
-          "hora_inicio": "08:00",
-          "hora_fin": "10:00",
-          "salon_id": 2
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "curso_id": 4,
-      "codigo": "DIS-PAR-PER-2024",
-      "creditos": 3,
-      "profesor_id": 4,
-      "cupos_disponibles": 30,
-      "programa_id": 2,
-      "horario_clases": [
-        {
-          "dia": "Miércoles",
-          "hora_inicio": "10:00",
-          "hora_fin": "12:00",
-          "salon_id": 2
-        },
-        {
-          "dia": "Viernes",
-          "hora_inicio": "10:00",
-          "hora_fin": "12:00",
-          "salon_id": 2
-        }
-      ]
-    },
-    {
-      "id": 5,
-      "curso_id": 5,
-      "codigo": "MAT-DIS-PER-2024",
-      "creditos": 4,
-      "profesor_id": 1,
-      "cupos_disponibles": 35,
-      "programa_id": 1,
-      "horario_clases": [
-        {
-          "dia": "Lunes",
-          "hora_inicio": "14:00",
-          "hora_fin": "16:00",
-          "salon_id": 1
-        },
-        {
-          "dia": "Martes",
-          "hora_inicio": "14:00",
-          "hora_fin": "16:00",
-          "salon_id": 1
-        }
-      ]
-    },
-    {
-      "id": 6,
-      "curso_id": 1,
-      "codigo": "PROG-AVA-PER-2024-B",
-      "creditos": 4,
-      "profesor_id": 2,
-      "cupos_disponibles": 35,
-      "programa_id": 1,
-      "horario_clases": [
-        {
-          "dia": "Lunes",
-          "hora_inicio": "16:00",
-          "hora_fin": "18:00",
-          "salon_id": 3
-        },
-        {
-          "dia": "Miércoles",
-          "hora_inicio": "16:00",
-          "hora_fin": "18:00",
-          "salon_id": 3
-        }
-      ]
-    },
-    {
-      "id": 7,
-      "curso_id": 2,
-      "codigo": "ALG-LI-PER-2024-B",
-      "creditos": 3,
-      "profesor_id": 3,
-      "cupos_disponibles": 35,
-      "programa_id": 2,
-      "horario_clases": [
-        {
-          "dia": "Lunes",
-          "hora_inicio": "18:00",
-          "hora_fin": "20:00",
-          "salon_id": 3
-        },
-        {
-          "dia": "Jueves",
-          "hora_inicio": "18:00",
-          "hora_fin": "20:00",
-          "salon_id": 3
-        }
-      ]
-    },
-    {
-      "id": 8,
-      "curso_id": 3,
-      "codigo": "EDATOS-PER-2024-B",
-      "creditos": 4,
-      "profesor_id": 4,
-      "cupos_disponibles": 35,
-      "programa_id": 1,
-      "horario_clases": [
-        {
-          "dia": "Martes",
-          "hora_inicio": "08:00",
-          "hora_fin": "10:00",
-          "salon_id": 4
-        },
-        {
-          "dia": "Jueves",
-          "hora_inicio": "08:00",
-          "hora_fin": "10:00",
-          "salon_id": 4
-        }
-      ]
-    },
-    {
-      "id": 9,
-      "curso_id": 4,
-      "codigo": "IIS-PER-2024-B",
-      "creditos": 3,
-      "profesor_id": 5,
-      "cupos_disponibles": 35,
-      "programa_id": 2,
-      "horario_clases": [
-        {
-          "dia": "Martes",
-          "hora_inicio": "10:00",
-          "hora_fin": "12:00",
-          "salon_id": 4
-        },
-        {
-          "dia": "Viernes",
-          "hora_inicio": "10:00",
-          "hora_fin": "12:00",
-          "salon_id": 4
+          "day": "Tuesday",
+          "start_hour": "15:00",
+          "end_hour": "16:00",
+          "classroom_id": "1"
         }
       ]
     }
   ],
-  "matriculas": [
+  "tuitions": [
     {
-      "id": 1,
-      "estudiante_id": 1,
-      "asignatura_id": 1,
-      "periodo_id": 1,
-      "precio": 4000
+      "id": "1",
+      "student_id": 1,
+      "subject_id": 1,
+      "period_id": 1,
+      "price": 4000
     },
     {
-      "id": 2,
-      "estudiante_id": 1,
-      "asignatura_id": 2,
-      "periodo_id": 1,
-      "precio": 3300
+      "id": "2",
+      "student_id": 1,
+      "subject_id": 2,
+      "period_id": 1,
+      "price": 3300
     }
   ]
 }
