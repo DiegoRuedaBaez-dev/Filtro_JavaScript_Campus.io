@@ -29,24 +29,25 @@ async function newTuitionForm() {
     tuitionsHTML.innerHTML += await createPersonForm(tuitions[0], "Tuitions");
 }
 
-async function addTuition(){
-    const tuitionList = await load("tuition");
+async function addTuitions(){
+    const tuitionList = await load("tuitions");
     const newTuition = {
         "id": tuitionList.length + 1,
-        "student_id": document.getElementById("Tuition-student_id-input").value,
-        "subject_id": document.getElementById("Tuition-subject_id-input").value,
-        "period_id": document.getElementById("Tuition-period_id-input").value,
-        "price": document.getElementById("Tuition-last_name-input").value
+        "student_id": document.getElementById("Tuitions-student_id-input").value,
+        "subject_id": document.getElementById("Tuitions-subject_id-input").value,
+        "period_id": document.getElementById("Tuitions-period_id-input").value,
+        "price": document.getElementById("Tuitions-price-input").value
     }
-    await save(newTuition,"tuition");
-    clearForm();
+    await save(newTuition,"tuitions");
     alert("Nueva matricula creada!");
+    clearForm();
+
 }
 
 function clearForm(){
-    document.getElementById("Tuition-document_type-input").value = "";
-    document.getElementById("Tuition-subject_id-input").value = "";
-    document.getElementById("Tuition-period_id-input").value = "";
-    document.getElementById("Tuition-last_name-input").value = "";
+    document.getElementById("Tuitions-document_type-input").value = "";
+    document.getElementById("Tuitions-subject_id-input").value = "";
+    document.getElementById("Tuitions-period_id-input").value = "";
+    document.getElementById("Tuitions-price-input").value = "";
 }
 

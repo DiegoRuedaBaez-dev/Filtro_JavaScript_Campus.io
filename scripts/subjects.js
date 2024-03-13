@@ -31,18 +31,18 @@ async function newSubjectForm() {
     subjectsHTML.innerHTML += await createPersonForm(subjects[0], "Subject");
 }
 
-async function addSubject() {
+async function addSubjects() {
     const subjectList = await load("subjects");
 
-    const courseIdInput = document.getElementById("Subject-course_id-input");
-    const codeInput = document.getElementById("Subject-code-input");
-    const creditInput = document.getElementById("Subject-credits-input");
-    const teacherIdInput = document.getElementById("Subject-teacher_id-input");
-    const spaceAvailableInput = document.getElementById("Subject-space_available-input");
-    const programIdInput = document.getElementById("Subject-program_id-input");
-    const dayInput = document.getElementById("Subject-day-input");
-    const hourInput = document.getElementById("Subject-hour-input");
-    const classroomIdInput = document.getElementById("Subject-classroom_id-input");
+    const courseIdInput = document.getElementById("Subjects-course_id-input");
+    const codeInput = document.getElementById("Subjects-code-input");
+    const creditInput = document.getElementById("Subjects-credits-input");
+    const teacherIdInput = document.getElementById("Subjects-teacher_id-input");
+    const spaceAvailableInput = document.getElementById("Subjects-space_available-input");
+    const programIdInput = document.getElementById("Subjects-program_id-input");
+    const dayInput = document.getElementById("Subjects-day-input");
+    const hourInput = document.getElementById("Subjects-hour-input");
+    const classroomIdInput = document.getElementById("Subjects-classroom_id-input");
 
     const newSubject = {
         "id": subjectList.length + 1,
@@ -66,7 +66,7 @@ async function addSubject() {
 
     clearForm(courseIdInput, codeInput, creditInput, teacherIdInput, spaceAvailableInput, programIdInput, dayInput, hourInput, classroomIdInput);
 
-    alert("Subject sucessfully created");
+    alert("Asignatura creada exitosamente!");
 }
 
 function clearForm(...inputs) {

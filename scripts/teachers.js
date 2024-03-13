@@ -34,25 +34,25 @@ async function newTeacherForm(){
     teachersHTML.innerHTML += await createPersonForm(teachers[0], "Teachers");
 }
 
-async function addTeacher(){
+async function addTeachers(){
     const teacherList = await load("teachers");
     const newTeacher = {
         "id": teacherList.length + 1,
-        "document_type": document.getElementById("Teacher-document_type-input").value,
-        "document_number": document.getElementById("Teacher-document_number-input").value,
-        "first_name": document.getElementById("Teacher-first_name-input").value,
-        "last_name": document.getElementById("Teacher-last_name-input").value,
-        "deparment_id": document.getElementById("Teacher-deparment_id-input").value
+        "tipo_documento": document.getElementById("Teachers-tipo_documento-input").value,
+        "numero_documento": document.getElementById("Teachers-numero_documento-input").value,
+        "nombre": document.getElementById("Teachers-nombre-input").value,
+        "apellido": document.getElementById("Teachers-apellido-input").value,
+        "departamento_id": document.getElementById("Teachers-departamento_id-input").value
     }
     await save(newTeacher,"teachers");
+    alert("Nuevo Profesor Creado Exitosamente!");
     clearForm();
-    alert("Teacher sucessfully created");
 }
 
 function clearForm(){
-    document.getElementById("Teacher-document_type-input").value = "";
-    document.getElementById("Teacher-document_number-input").value = "";
-    document.getElementById("Teacher-first_name-input").value = "";
-    document.getElementById("Teacher-last_name-input").value = "";
-    document.getElementById("Teacher-deparment_id-input").value = "";
+    document.getElementById("Teachers-tipo_documento-input").value = "";
+    document.getElementById("Teachers-document_number-input").value = "";
+    document.getElementById("Teachers-nombre-input").value = "";
+    document.getElementById("Teachers-last_name-input").value = "";
+    document.getElementById("Teachers-departamento_id-input").value = "";
 }

@@ -138,7 +138,6 @@
       "period_id": 2,
       "program_id": 2
     },
-
     {
       "id": "13",
       "credit_cost": 1090,
@@ -212,7 +211,7 @@
   ],
   "teachers": [
     {
-      "id": 1,
+      "id": "1",
       "tipo_documento": "CC",
       "numero_documento": "13788555",
       "nombre": "Ana María",
@@ -220,7 +219,7 @@
       "departamento_id": 12
     },
     {
-      "id": 2,
+      "id": "2",
       "tipo_documento": "TI",
       "numero_documento": "96321023",
       "nombre": "Juan José",
@@ -228,7 +227,7 @@
       "departamento_id": 3
     },
     {
-      "id": 3,
+      "id": "3",
       "tipo_documento": "CC",
       "numero_documento": "85236987",
       "nombre": "Laura Andrea",
@@ -236,7 +235,7 @@
       "departamento_id": 15
     },
     {
-      "id": 4,
+      "id": "4",
       "tipo_documento": "TI",
       "numero_documento": "74125836",
       "nombre": "Carlos Alberto",
@@ -244,7 +243,7 @@
       "departamento_id": 7
     },
     {
-      "id": 5,
+      "id": "5",
       "tipo_documento": "CC",
       "numero_documento": "55692147",
       "nombre": "María Paula",
@@ -252,7 +251,7 @@
       "departamento_id": 9
     },
     {
-      "id": 6,
+      "id": "6",
       "tipo_documento": "TI",
       "numero_documento": "32165498",
       "nombre": "Jaime Andrés",
@@ -260,7 +259,7 @@
       "departamento_id": 11
     },
     {
-      "id": 7,
+      "id": "7",
       "tipo_documento": "CC",
       "numero_documento": "87563214",
       "nombre": "Valentina",
@@ -268,7 +267,7 @@
       "departamento_id": 2
     },
     {
-      "id": 8,
+      "id": "8",
       "tipo_documento": "TI",
       "numero_documento": "98745126",
       "nombre": "Sergio",
@@ -276,7 +275,7 @@
       "departamento_id": 5
     },
     {
-      "id": 9,
+      "id": "9",
       "tipo_documento": "CC",
       "numero_documento": "23654189",
       "nombre": "Mónica",
@@ -284,7 +283,7 @@
       "departamento_id": 14
     },
     {
-      "id": 10,
+      "id": "10",
       "tipo_documento": "TI",
       "numero_documento": "54987123",
       "nombre": "Felipe",
@@ -292,7 +291,7 @@
       "departamento_id": 8
     },
     {
-      "id": 11,
+      "id": "11",
       "tipo_documento": "CC",
       "numero_documento": "65412389",
       "nombre": "Juliana",
@@ -300,15 +299,15 @@
       "departamento_id": 6
     },
     {
-      "id": 12,
+      "id": "12",
       "tipo_documento": "TI",
       "numero_documento": "78945612",
       "nombre": "Daniela",
       "apellido": "Suárez",
       "departamento_id": 13
     },
-   {
-      "id": 13,
+    {
+      "id": "13",
       "tipo_documento": "CC",
       "numero_documento": "34567891",
       "nombre": "Juan David",
@@ -316,7 +315,7 @@
       "departamento_id": 1
     },
     {
-      "id": 14,
+      "id": "14",
       "tipo_documento": "TI",
       "numero_documento": "23456123",
       "nombre": "María Camila",
@@ -324,7 +323,7 @@
       "departamento_id": 4
     },
     {
-      "id": 15,
+      "id": "15",
       "tipo_documento": "CC",
       "numero_documento": "98765432",
       "nombre": "Jorge",
@@ -332,7 +331,7 @@
       "departamento_id": 10
     },
     {
-      "id": 16,
+      "id": "16",
       "tipo_documento": "TI",
       "numero_documento": "12345678",
       "nombre": "Sofía",
@@ -340,7 +339,7 @@
       "departamento_id": 16
     },
     {
-      "id": 17,
+      "id": "17",
       "tipo_documento": "CC",
       "numero_documento": "45678912",
       "nombre": "Diego",
@@ -348,7 +347,7 @@
       "departamento_id": 17
     },
     {
-      "id": 18,
+      "id": "18",
       "tipo_documento": "TI",
       "numero_documento": "89123456",
       "nombre": "Jessica",
@@ -356,7 +355,7 @@
       "departamento_id": 18
     },
     {
-      "id": 19,
+      "id": "19",
       "tipo_documento": "CC",
       "numero_documento": "78912345",
       "nombre": "Catalina",
@@ -364,15 +363,31 @@
       "departamento_id": 19
     },
     {
-      "id": 20,
+      "id": "20",
       "tipo_documento": "TI",
       "numero_documento": "56123478",
       "nombre": "Juan Sebastián",
       "apellido": "Ruiz",
       "departamento_id": 20
+    },
+    {
+      "id": 21,
+      "tipo_documento": "CC",
+      "numero_documento": "154",
+      "nombre": "die",
+      "apellido": "go",
+      "departamento_id": "1"
+    },
+    {
+      "id": 22,
+      "tipo_documento": "cc",
+      "numero_documento": "154656",
+      "nombre": "d",
+      "apellido": "d",
+      "departamento_id": "1"
     }
   ],
-  "students":[
+  "students": [
     {
       "id": "1",
       "first_name": "Carlos",
@@ -997,7 +1012,7 @@
       "gender": "Female",
       "program_id": 2
     },
-   {
+    {
       "id": "49",
       "first_name": "Pedro",
       "last_name": "Rodríguez",
@@ -1022,6 +1037,19 @@
       "birthdate": "2015-08-18",
       "gender": "Female",
       "program_id": 4
+    },
+    {
+      "id": 51,
+      "document_type": "cc",
+      "document_number": "101212",
+      "first_name": "diego",
+      "last_name": "rueda",
+      "residence_city": "florida",
+      "direction": "calle",
+      "phone": "3205",
+      "birthdate": "2001",
+      "gender": "hombre",
+      "program_id": "1"
     }
   ],
   "courses": [
@@ -1396,7 +1424,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": "3",
       "course_id": "1",
       "code": "1",
       "credits": "4",
@@ -1408,6 +1436,23 @@
           "day": "Tuesday",
           "start_hour": "15:00",
           "end_hour": "16:00",
+          "classroom_id": "1"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "course_id": "1",
+      "code": "1",
+      "credits": "3",
+      "teacher_id": "1",
+      "space_available": "20",
+      "program_id": "1",
+      "class_schedule": [
+        {
+          "day": "Monday",
+          "start_hour": "06:00",
+          "end_hour": "07:00",
           "classroom_id": "1"
         }
       ]
@@ -1427,6 +1472,13 @@
       "subject_id": 2,
       "period_id": 1,
       "price": 3300
+    },
+    {
+      "id": 3,
+      "student_id": "1",
+      "subject_id": "1",
+      "period_id": "1",
+      "price": "1000"
     }
   ]
 }

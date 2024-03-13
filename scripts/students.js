@@ -29,20 +29,20 @@ async function newStudentForm() {
     studentsHTML.innerHTML += await createPersonForm(students[0], "Students");
 }
 
-async function addStudent() {
+async function addStudents() {
     const studentList = await load("students");
 
     const documentInputs = {
-        "document_type": document.getElementById("Student-document_type-input"),
-        "document_number": document.getElementById("Student-document_number-input"),
-        "first_name": document.getElementById("Student-first_name-input"),
-        "last_name": document.getElementById("Student-last_name-input"),
-        "residence_city": document.getElementById("Student-residence_city-input"),
-        "direction": document.getElementById("Student-direction-input"),
-        "phone": document.getElementById("Student-phone-input"),
-        "birthdate": document.getElementById("Student-birthdate-input"),
-        "gender": document.getElementById("Student-gender-input"),
-        "program_id": document.getElementById("Student-program_id-input")
+        "document_type": document.getElementById("Students-document_type-input"),
+        "document_number": document.getElementById("Students-document_number-input"),
+        "first_name": document.getElementById("Students-first_name-input"),
+        "last_name": document.getElementById("Students-last_name-input"),
+        "residence_city": document.getElementById("Students-residence_city-input"),
+        "direction": document.getElementById("Students-direction-input"),
+        "phone": document.getElementById("Students-phone-input"),
+        "birthdate": document.getElementById("Students-birthdate-input"),
+        "gender": document.getElementById("Students-gender-input"),
+        "program_id": document.getElementById("Students-program_id-input")
     };
 
     const newStudent = {
@@ -54,7 +54,7 @@ async function addStudent() {
 
     Object.values(documentInputs).forEach(input => input.value = "");
 
-    alert("Student sucessfully created");
+    alert("Estudiante creado exitosamente");
 }
 
 function hideSecondaryMenus() {
